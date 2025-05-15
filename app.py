@@ -37,6 +37,8 @@ def categoria(nome):
 
     return render_template('categoria.html', categoria=nome, alimenti=alimenti, dose=dose_totale)
 
+//mancaif
+
 import os
 port = int(os.environ.get("PORT", 5000))
 app.run(host="0.0.0.0", port=port)
