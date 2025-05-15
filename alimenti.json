@@ -1,0 +1,95 @@
+[
+    {
+        "nome": "Mela",
+        "categoria": "Frutta",
+        "carboidrati_per_dose": 12,
+        "dose": "100g",
+        "immagine": "mela.png"
+    },
+    {
+        "nome": "Banana",
+        "categoria": "Frutta",
+        "carboidrati_per_dose": 20,
+        "dose": "100g",
+        "immagine": "banana.png"
+    },
+    {
+        "nome": "Carote",
+        "categoria": "Verdura",
+        "carboidrati_per_dose": 7,
+        "dose": "100g",
+        "immagine": "carote.png"
+    },
+    {
+        "nome": "Patate",
+        "categoria": "Verdura",
+        "carboidrati_per_dose": 17,
+        "dose": "100g",
+        "immagine": "patate.png"
+    },
+    {
+        "nome": "Riso",
+        "categoria": "Cereali",
+        "carboidrati_per_dose": 45,
+        "dose": "100g",
+        "immagine": "riso.png"
+    },
+    {
+        "nome": "Pane",
+        "categoria": "Cereali",
+        "carboidrati_per_dose": 30,
+        "dose": "100g",
+        "immagine": "pane.png"
+    },
+    {
+        "nome": "Cioccolato",
+        "categoria": "Dolci",
+        "carboidrati_per_dose": 25,
+        "dose": "100g",
+        "immagine": "cioccolato.png"
+    },
+    {
+        "nome": "Biscotti",
+        "categoria": "Dolci",
+        "carboidrati_per_dose": 22,
+        "dose": "100g",
+        "immagine": "biscotti.png"
+    },
+    {
+        "nome": "Coca Cola",
+        "categoria": "Bevande",
+        "carboidrati_per_dose": 35,
+        "dose": "330ml",
+        "immagine": "cocacola.png"
+    },
+    {
+        "nome": "Red Bull",
+        "categoria": "Bevande",
+        "carboidrati_per_dose": 28,
+        "dose": "330ml",
+        "immagine": "redbull.png"
+    },
+    {
+        "nome": "Yogurt",
+        "categoria": "Latticini",
+        "carboidrati_per_dose": 6,
+        "dose": "100g",
+        "immagine": "yogurt.png"
+    },
+    {
+        "nome": "Latte",
+        "categoria": "Latticini",
+        "carboidrati_per_dose": 12,
+        "dose": "100g",
+        "immagine": "latte.png"
+    },
+    {
+        "nome": "Piadina",
+        "categoria": "Cereali",
+        "carboidrati_per_dose": 112.5,
+        "dose": "200g",
+        "immagine": "piadina.png"
+    }
+
+
+]
