@@ -15,29 +15,36 @@
     }
   </script>
   <style>
+    body {
+      background-color: #fffdfc;
+    }
     .food-card {
       border-radius: 15px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
       transition: transform 0.2s ease-in-out;
-      overflow: visible;
-      z-index: 0;
+    }
+    .food-card:hover {
+      transform: scale(1.01);
     }
     .food-image {
-      border-radius: 10px;
       width: 100%;
-      height: 160px;
+      height: 200px;
       object-fit: cover;
     }
-    footer {
-      background-color: #795548;
-      color: white;
-      padding: 1rem 0;
+    .input-wrapper {
+      padding: 1rem;
     }
     input[type="number"] {
       font-size: 1rem;
       height: auto;
       z-index: 1;
       position: relative;
+    }
+    footer {
+      background-color: #795548;
+      color: white;
+      padding: 1rem 0;
     }
   </style>
 </head>
@@ -59,13 +66,13 @@
 
     <div class="row g-4">
       {% for alimento in alimenti %}
-      <div class="col-12">
-        <div class="card food-card p-3 h-100">
-          <img src="{{ url_for('static', filename='images/' + alimento.immagine) }}" class="food-image mb-3" alt="{{ alimento.nome }}">
-          <div class="card-body text-center">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card food-card h-100">
+          <img src="{{ url_for('static', filename='images/' + alimento.immagine) }}" class="food-image" alt="{{ alimento.nome }}">
+          <div class="input-wrapper text-center">
             <h6 class="mb-1">{{ alimento.nome }}</h6>
-            <small class="text-muted">{{ alimento.dose }} – {{ alimento.carboidrati_per_dose }}g CHO</small>
-            <input type="number" step="0.1" name="{{ alimento.nome }}" class="form-control mt-2 w-100" placeholder="Quantità in porzioni" inputmode="decimal">
+            <small class="text-muted d-block mb-2">{{ alimento.dose }} – {{ alimento.carboidrati_per_dose }}g CHO</small>
+            <input type="number" step="0.1" name="{{ alimento.nome }}" class="form-control" placeholder="Quantità in porzioni" inputmode="decimal">
           </div>
         </div>
       </div>
