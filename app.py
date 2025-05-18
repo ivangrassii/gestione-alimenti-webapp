@@ -12,6 +12,10 @@ def home():
     categorie = sorted(set([a["categoria"] for a in carica_alimenti()]))
     return render_template('home.html', categorie=categorie)
 
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
 @app.route('/categoria/<nome>', methods=['GET', 'POST'])
 def categoria(nome):
     alimenti = [a for a in carica_alimenti() if a["categoria"] == nome]
