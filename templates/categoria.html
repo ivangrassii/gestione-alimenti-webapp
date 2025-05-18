@@ -50,7 +50,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-dark bg-dark mb-4">
+<nav class="navbar navbar-dark mb-4">
   <div class="container-fluid">
     <a href="/" class="navbar-brand">← Torna alle Categorie</a>
     <span class="navbar-text text-white">{{ categoria }}</span>
@@ -58,7 +58,7 @@
 </nav>
 
 <div class="container">
-  <form method="POST" class="card p-4 shadow-sm mb-4">
+  <form method="POST" class="form-container animate__animated animate__fadeInUp">
     <div class="mb-4">
       <label for="rapporto_ic" class="form-label">Rapporto I/C (max 20):</label>
       <input type="number" name="rapporto_ic" step="0.1" class="form-control" required inputmode="decimal">
@@ -67,11 +67,11 @@
     <div class="row g-4">
       {% for alimento in alimenti %}
       <div class="col-12 col-md-6 col-lg-4">
-        <div class="card food-card h-100">
-          <img src="{{ url_for('static', filename='images/' + alimento.immagine) }}" class="food-image" alt="{{ alimento.nome }}">
-          <div class="input-wrapper text-center">
-            <h6 class="mb-1">{{ alimento.nome }}</h6>
-            <small class="text-muted d-block mb-2">{{ alimento.dose }} – {{ alimento.carboidrati_per_dose }}g CHO</small>
+        <div class="card food-card p-3 h-100">
+          <img src="{{ url_for('static', filename='images/' + alimento.immagine) }}" class="food-image mb-2" alt="{{ alimento.nome }}">
+          <div>
+            <h6 class="mb-1 text-center">{{ alimento.nome }}</h6>
+            <small class="text-muted d-block text-center mb-2">{{ alimento.dose }} – {{ alimento.carboidrati_per_dose }}g CHO</small>
             <input type="number" step="0.1" name="{{ alimento.nome }}" class="form-control" placeholder="Quantità in porzioni" inputmode="decimal">
           </div>
         </div>
