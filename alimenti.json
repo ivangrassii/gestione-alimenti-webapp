@@ -91,10 +91,10 @@
         "immagine": "piadina.png"
     },
      {
-    "nome": "Cracker salati",
-    "categoria": "Snack",
-    "dose": "30g",
-    "carboidrati_per_dose": 20,
-    "immagine": "snack.png"
+        "nome": "Cracker salati",
+        "categoria": "Snack",
+        "dose": "30g",
+        "carboidrati_per_dose": 20,
+        "immagine": "snack.png"
   }
 ]
